@@ -26,9 +26,7 @@ addon.webhook('room_message', /@[Dd]orman/, function *() {
     "Does Evan still work here?",
     "Is it 4:20 yet?",
     "It's Jason's fault.",
-    "I'm wearing jeans right now...",
-    "/me is replying...",
-    "/me left the room (user disconnected)"
+    "I'm wearing jeans right now..."
   ];
 
   yield this.roomClient.sendNotification(phrases[Math.floor(Math.random() * phrases.length)]);
